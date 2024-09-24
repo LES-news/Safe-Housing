@@ -1,4 +1,4 @@
-/* Basic CSS Reset */
+/* CSS Reset */
 * {
     margin: 0;
     padding: 0;
@@ -10,13 +10,14 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    line-height: 1.6; /* Improve text spacing */
 }
 
 /* Navigation Bar Styling */
 .navbar {
     background-color: #4CAF50; /* Green background */
     color: white;
-    padding: 10px 20px;
+    padding: 15px 20px; /* Add padding for better visibility */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,7 +51,7 @@ body {
 .nav-links a {
     text-decoration: none;
     color: white;
-    font-size: 1em;
+    font-size: 1.1em; /* Increase font size for better visibility */
 }
 
 .nav-links a:hover {
@@ -59,12 +60,18 @@ body {
 
 /* Main Content Styling */
 section {
-    padding: 20px;
-    text-align: center;
+    padding: 20px 40px; /* Increase padding for better spacing */
+    background-color: white;
+    margin: 20px auto; /* Add margin for separation */
+    max-width: 800px; /* Limit the width of the content */
+    border: 1px solid #ddd; /* Add border for distinction */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    border-radius: 8px; /* Rounded corners */
 }
 
 h2 {
     color: #333;
+    margin-bottom: 15px; /* Add spacing below the heading */
 }
 
 /* Footer Styling */
@@ -72,8 +79,9 @@ footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     position: fixed;
     bottom: 0;
     width: 100%;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1); /* Shadow on the footer */
 }
