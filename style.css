@@ -1,3 +1,10 @@
+/* Basic CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -5,32 +12,62 @@ body {
     padding: 0;
 }
 
-header {
-    background-color: #4CAF50;
+/* Navigation Bar Styling */
+.navbar {
+    background-color: #4CAF50; /* Green background */
     color: white;
     padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+}
+
+.nav-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Main Content Styling */
+section {
+    padding: 20px;
     text-align: center;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
+h2 {
+    color: #333;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-}
-
-section {
-    padding: 20px;
-}
-
+/* Footer Styling */
 footer {
     background-color: #333;
     color: white;
